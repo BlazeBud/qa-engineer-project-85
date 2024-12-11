@@ -99,7 +99,6 @@
     Пользователь должен зарегистрироваться и попасть на главную страницу
     Пользователь получает сообщение об успешной аутентификации
 
-
   - summary: |
     Проверка успешной авторизации пользователя через GitHub
   requirement: |
@@ -155,14 +154,14 @@
   expected-result: |
       Пользователь должен увидеть сообщение о результате выполнения решения
 
- - summary: |
+  - summary: |
       Проверка результата решения задачи
- requirement: |
+  requirement: |
       После отправки решения задача должна быть проверена, и результат должен быть отображен
- prerequisites: |
+  prerequisites: |
       Пользователь авторизован 
       Решил задачу rect_area
- test-data: |
+  test-data: |
       Код решения задачи = const _ = require("lodash");
                            const R = require("rambda");
 
@@ -171,162 +170,162 @@
                            };
 
                            module.exports = solution;
- steps:
+  steps:
       - Ожидаем проверки решения системой
- expected-result: |
+  expected-result: |
       Пользователь должен увидеть сообщение о том, что задача решена успешно или с ошибками
 
- - summary: |
+  - summary: |
       Отправка сообщения в созданной игре между оппонентами
- requirement: |
+  requirement: |
       После после создания игры пользователи должены иметь возможность отправлять сообщения друг другу
- prerequisites: |
+  prerequisites: |
       Пользователь авторизован 
       Находится на странице задачи
- test-data: |
+  test-data: |
       no-data
- steps:
+  steps:
       - Ввести любое сообщение в поле Be nice at chat!
       - Нажать на кнопку Send
- expected-result: |
+  expected-result: |
       Пользователь должен иметь возможность отправлять сообщение оппоненту
 
- - summary: |
+  - summary: |
          Изменение языка кода в созданной игре
- requirement: |
+  requirement: |
          Пользователь может менять язык решения в процессе игры
- prerequisites: |
+  prerequisites: |
        Пользователь авторизован
        Создана новая игра
- test-data: |
+  test-data: |
        Используемый язык = Node.js 16.17.0
- steps:
+  steps:
       - В окне заданного языка в выпадающем списке выбрать "Python 3.12.2"
- expected-result: |
+  expected-result: |
        В форме написания кода решения изменился язык программирования на выбранный
 
-- summary: |
-   Изменение стиля редактора с темного на светлый
-requirement: |
+  - summary: |
+     Изменение стиля редактора с темного на светлый
+  requirement: |
     Пользователь может изменить стиль редактора 
-prerequisites: |
+  prerequisites: |
     Пользователь авторизован
     Созданна игра 
-test-data: |
+  test-data: |
     no data
-steps:
+  steps:
     - Нажать на кнопку с изображение солнца в редакторе кода
-expected-result: |
+  expected-result: |
     Меняется стиль редактора с темного на светлый
     
-- summary: |
+  - summary: |
     Просмотр рейтинга с достижениями игроков сайта
-requirement: |
+  requirement: |
     Пользователь может просматривать таблицу рейтинга с достижениями игроков
-prerequisites: |
+  prerequisites: |
     Открыта основная страница сайта
     Пользователь авторизован
-test-data: |
+  test-data: |
     no data
-steps:
+  steps:
     - Нажать на свой никнейм в верхней правой части страницы
     - Из выпавшего списка выбрать "Users rating"
-expected-result: |
+  expected-result: |
     Открывается таблица с достижениями игроков 
 
-- summary: |
+  - summary: |
     Создание игры с определенными параметрами
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность создать игру с необходимыми параметрами
-prerequisites: |
+  prerequisites: |
     Пользователь авторизован
     Находиться на главной странице
-test-data: |
+  test-data: |
     no data
-steps:
+  steps:
     - Нажать на кнопку Create a game
     - Выбрать любой Level
     - Выбрать любой Game Type
     - Указать любой Time control
     - Выбрать задачу или указать теги
     - Нажать на кнопку Create a battle
-expected-result: |
+  expected-result: |
     Создаётся игра с указанными параметрами
 
-- summary: |
+  - summary: |
     Присоединение к созданной игре
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность подключиться к созданной игре
-prerequisites: |
+  prerequisites: |
     Пользователь авторизован
     Находиться на главной странице
-test-data: |
+  test-data: |
     no data
-steps:
+  steps:
     - Нажать на вкладку Lobby
     - Выбрать любую игру
     - Нажать на кнопку Fight
-expected-result: |
+  expected-result: |
     Пользователь подключаеться к созданной игре
 
-- summary: |
+  - summary: |
     Отправка сообщений в общий чат
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность писать в общий чат
-prerequisites: |
+  prerequisites: |
     Пользователь авторизован 
     Находится на главной странице
-test-data: |
+  test-data: |
     no data
-steps:
+  steps:
     - Ввести любое сообщение в поле Be nice at chat!
     - Нажать на кнопку Send
-expected-result: |
+  expected-result: |
     Отправляется сообщение в общий чат
 
-- summary: |
+  - summary: |
     Отправка личного сообщения пользователю
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность писать личные сообщения
-prerequisites: |
+  prerequisites: |
     Пользователь авторизован 
     Находится на главной странице
-test-data: |
+  test-data: |
     no data
-steps:
+  steps:
     - Выбрать пользователя во вкладке lobby
     - В всплывающем окне выбрать Direct message
     - Ввести любое сообщение в поле Be nice at chat!
     - Нажать на кнопку Send
-expected-result: |
+  expected-result: |
     Отправляется личное ссобщение пользователю
 
-- summary: |
+  - summary: |
     Просмотр информации о турнирах
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность просматривать подробную информацию о турнирах
-prerequisites: |
+  prerequisites: |
     Пользователь авторизован и 
     Находится на главной странице
-test-data: |
+  test-data: |
     no data
-steps:
+  steps:
     - Нажать на вкладку Tournaments
     - Нажать на ссылку Tournaments info
     - Нажать на кнопку Show любого турнира
-expected-result: |
+  expected-result: |
     Отображается подробная информация о турнире
 
-- summary: |
+ - summary: |
     Просмотр информации о рейтингах пользователей 
-requirement: |
+ requirement: |
     Пользователь должен иметь возможность просматривать подробную информацию о рейтингах пользователей
-prerequisites: |
+ prerequisites: |
     Пользователь авторизован 
     Находится на главной странице
-test-data: |
+ test-data: |
     no data
-steps:
+ steps:
     - В таблице Leaderboard нажать на ссылку Top list
-expected-result: |
+ expected-result: |
     Отображается подробная информация о рейтингах пользователей
