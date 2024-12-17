@@ -1,88 +1,88 @@
 ---
 - summary: |
     Проверка успешной регистрации нового пользователя
-status: pass
+  status: pass
 
 - summary: |
     Проверка регистрации с уже существующим email
-status: pass
+  status: pass
 
 - summary: |
     Проверка получения письма-подтверждение о регистрации на электронную почту
-status: fail
+  status: fail
 
 - summary: |
     Проверка функционала личного кабинета
-status: pass
+  status: pass
 
 - summary: |
     Проверка отзывчивости интерфейса на мобильных устройствах
-status: pass
+  status: pass
 
 - summary: |
     Проверка скорости ответа сервера
-status: pass
+  status: pass
 
 - summary: |
     Проверка успешной регистрации пользователя через GitHub
-status: pass
+  status: pass
 
 - summary: |
     Проверка успешной авторизации пользователя через GitHub
-status: pass
+  status: pass
 
 - summary: |
     Создание игры с ботом
-status: pass
+  status: pass
 
 - summary: |
     Проверка отправки решения задачи
-status: pass
+  status: pass
 
 - summary: |
     Проверка результата решения задачи
-status: pass
+  status: pass
 
 - summary: |
     Отправка сообщения в созданной игре между оппонентами
-status: pass
+  status: pass
 
 - summary: |
     Изменение языка кода в созданной игре
-status: pass
+  status: pass
 
 - summary: |
     Изменение стиля редактора с темного на светлый
-status: pass
+  status: pass
 
 - summary: |
     Просмотр рейтинга с достижениями игроков сайта
-status: pass
+  status: pass
 
 - summary: |
     Создание игры с определенными параметрами
-status: pass
+  status: pass
 
 - summary: |
     Присоединение к созданной игре
-status: pass
+  status: pass
 
 - summary: |
     Отправка сообщений в общий чат
-status: pass
+  status: pass
     
 - summary: |
     Отправка личного сообщения пользователю
-status: pass
+  status: pass
 
 - summary: |
     Просмотр информации о турнирах
-status: pass
+  status: pass
 
 - summary: |
     Просмотр информации о рейтингах пользователей
-status: pass
+  status: pass
 
 - summary: |
     Проверка создания игры без регистрации
-status: pass
+  status: pass
