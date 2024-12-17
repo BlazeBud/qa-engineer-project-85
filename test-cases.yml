@@ -36,7 +36,7 @@
       - Вводим пароль
       - Подтверждаем пароль
       - Нажимаем кнопку «Submit»
-    expected-result: |
+  expected-result: |
       Появляется сообщение об ошибке: "Email is already taken"
 
 - summary: |
