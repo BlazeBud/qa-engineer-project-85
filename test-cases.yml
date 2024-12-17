@@ -334,27 +334,27 @@
 
 - summary: |
     Просмотр информации о рейтингах пользователей 
- requirement: |
+  requirement: |
     Пользователь должен иметь возможность просматривать подробную информацию о рейтингах пользователей
- prerequisites: |
+  prerequisites: |
     Пользователь авторизован 
     Находится на главной странице
- test-data: |
+  test-data: |
     no data
- steps:
+  steps:
     - В таблице Leaderboard нажать на ссылку Top list
- expected-result: |
+  expected-result: |
     Отображается подробная информация о рейтингах пользователей
 
 - summary: |
     Проверка создания игры без регистрации
- requirement: |
+  requirement: |
     Пользователь должен иметь возможность создать игру без регистрации
- prerequisites: |
+  prerequisites: |
     Открыта главная страница сайта
- test-data: |
+  test-data: |
     no-data
- steps:
+  steps:
     - Нажимаем на кнопку "Try simple battle"
- expected-result: |
+  expected-result: |
     Должна произойти переадресация на страницу с рандомно созданной игрой
